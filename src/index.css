@@ -9,46 +9,51 @@
     --font-heading: 'Playfair Display', serif;
     --font-body: 'Montserrat', sans-serif;
 
-    /* F. Ortega Brand Palette - HSL */
-    --background: 60 56% 91%;
-    --foreground: 0 0% 8%;
+    /* F. Ortega Liberdade - Paleta B2C (Mulheres) - HSL */
+    /* Verde Esperança */
+    --background: 140 47% 96%;
+    --foreground: 140 47% 20%;
 
-    --card: 60 30% 96%;
-    --card-foreground: 0 0% 8%;
+    --card: 0 0% 100%;
+    --card-foreground: 140 47% 20%;
 
-    --popover: 60 30% 96%;
-    --popover-foreground: 0 0% 8%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 140 47% 20%;
 
-    --primary: 0 0% 8%;
-    --primary-foreground: 60 56% 91%;
+    /* Verde Esperança - Cor Primária */
+    --primary: 140 47% 34%;
+    --primary-foreground: 0 0% 100%;
 
-    --secondary: 140 7% 57%;
+    /* Dourado Sucesso - Cor Secundária */
+    --secondary: 43 69% 47%;
     --secondary-foreground: 0 0% 100%;
 
-    --muted: 60 20% 88%;
-    --muted-foreground: 0 0% 35%;
+    --muted: 140 20% 88%;
+    --muted-foreground: 140 10% 35%;
 
-    --accent: 43 90% 38%;
+    /* Coral Energia - Cor de Destaque/Ação */
+    --accent: 0 100% 71%;
     --accent-foreground: 0 0% 100%;
 
     --destructive: 10 69% 62%;
     --destructive-foreground: 0 0% 100%;
 
-    --border: 60 15% 82%;
-    --input: 60 15% 82%;
-    --ring: 43 90% 38%;
+    --border: 140 15% 82%;
+    --input: 140 15% 82%;
+    --ring: 43 69% 47%;
 
     --radius: 0.5rem;
 
     /* Extended tokens */
-    --hero-gradient: linear-gradient(135deg, hsl(0 0% 8%) 0%, hsl(0 0% 16%) 100%);
-    --button-gradient: linear-gradient(135deg, hsl(43 90% 38%) 0%, hsl(43 80% 48%) 100%);
-    --section-alt: 60 20% 88%;
-    --text-light: 0 0% 50%;
-    --gold: 43 90% 38%;
+    --hero-gradient: linear-gradient(135deg, hsl(140 47% 34%) 0%, hsl(43 69% 47%) 100%);
+    --button-gradient: linear-gradient(135deg, hsl(0 100% 71%) 0%, hsl(43 69% 47%) 100%);
+    --section-alt: 140 20% 94%;
+    --text-light: 140 10% 50%;
+    --gold: 43 69% 47%;
     --gold-light: 43 70% 55%;
-    --sage: 140 7% 57%;
-    --sage-light: 140 10% 75%;
+    --green: 140 47% 34%;
+    --green-light: 140 47% 54%;
+    --coral: 0 100% 71%;
 
     --sidebar-background: 0 0% 98%;
     --sidebar-foreground: 240 5.3% 26.1%;
@@ -61,33 +66,33 @@
   }
 
   .dark {
-    --background: 0 0% 6%;
-    --foreground: 60 56% 91%;
-    --card: 0 0% 10%;
-    --card-foreground: 60 56% 91%;
-    --popover: 0 0% 10%;
-    --popover-foreground: 60 56% 91%;
-    --primary: 43 90% 38%;
-    --primary-foreground: 0 0% 6%;
-    --secondary: 140 7% 40%;
-    --secondary-foreground: 60 56% 91%;
-    --muted: 0 0% 14%;
-    --muted-foreground: 60 10% 65%;
-    --accent: 43 90% 38%;
-    --accent-foreground: 0 0% 6%;
+    --background: 140 47% 12%;
+    --foreground: 140 20% 96%;
+    --card: 140 47% 10%;
+    --card-foreground: 140 20% 96%;
+    --popover: 140 47% 10%;
+    --popover-foreground: 140 20% 96%;
+    --primary: 140 47% 54%;
+    --primary-foreground: 140 47% 12%;
+    --secondary: 43 69% 60%;
+    --secondary-foreground: 140 47% 12%;
+    --muted: 140 20% 22%;
+    --muted-foreground: 140 10% 65%;
+    --accent: 0 100% 80%;
+    --accent-foreground: 140 47% 12%;
     --destructive: 10 69% 50%;
-    --destructive-foreground: 60 56% 91%;
-    --border: 0 0% 18%;
-    --input: 0 0% 18%;
-    --ring: 43 90% 38%;
-    --sidebar-background: 0 0% 8%;
+    --destructive-foreground: 140 20% 96%;
+    --border: 140 20% 22%;
+    --input: 140 20% 22%;
+    --ring: 43 69% 60%;
+    --sidebar-background: 140 47% 8%;
     --sidebar-foreground: 240 4.8% 95.9%;
-    --sidebar-primary: 43 90% 38%;
+    --sidebar-primary: 140 47% 54%;
     --sidebar-primary-foreground: 0 0% 100%;
-    --sidebar-accent: 0 0% 14%;
+    --sidebar-accent: 140 20% 14%;
     --sidebar-accent-foreground: 240 4.8% 95.9%;
-    --sidebar-border: 0 0% 18%;
-    --sidebar-ring: 43 90% 38%;
+    --sidebar-border: 140 20% 14%;
+    --sidebar-ring: 140 47% 54%;
   }
 }
 
@@ -119,11 +124,17 @@
   .bg-gold {
     background-color: hsl(var(--gold));
   }
-  .text-sage {
-    color: hsl(var(--sage));
+  .text-green {
+    color: hsl(var(--green));
   }
-  .bg-sage {
-    background-color: hsl(var(--sage));
+  .bg-green {
+    background-color: hsl(var(--green));
+  }
+  .text-coral {
+    color: hsl(var(--coral));
+  }
+  .bg-coral {
+    background-color: hsl(var(--coral));
   }
   .border-gold {
     border-color: hsl(var(--gold));
