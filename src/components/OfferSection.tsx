@@ -2,9 +2,9 @@ import { Check, X } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const included = [
-  "Receber análise preliminar da sua situação fiscal",
-  "Descobrir se está pagando impostos a mais",
-  "Entender quanto posso recuperar para você",
+  "Receber análise da sua situação (sem julgamento)",
+  "Descobrir se o método é adequado para você",
+  "Entender quanto tempo levará sua liberdade",
   "Sair com um plano de ação (mesmo que não me contrate)",
 ];
 
@@ -21,11 +21,11 @@ const OfferSection = () => {
   };
 
   return (
-    <section className="bg-sage/10 py-20 px-4">
+    <section className="bg-green/10 py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <ScrollReveal>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
-            O Que Está Incluído na Consulta Gratuita de 30 Minutos
+            O Que Está Incluído na Sessão Gratuita de 30 Minutos
           </h2>
           <div className="gold-line w-16 mx-auto mb-12" />
         </ScrollReveal>
@@ -50,7 +50,7 @@ const OfferSection = () => {
               ))}
             </div>
 
-            <div className="bg-primary/5 p-6 rounded-lg mb-6">
+            <div className="bg-background/50 p-6 rounded-lg mb-6">
               <p className="font-heading text-sm font-bold text-foreground mb-4">
                 O que NÃO é:
               </p>
@@ -77,13 +77,16 @@ const OfferSection = () => {
           <div className="text-center">
             <button
               onClick={() => scrollTo("cta-final")}
-              className="gradient-button text-primary font-body font-semibold text-sm px-10 py-5 rounded tracking-[0.15em] uppercase hover:brightness-110 hover:scale-105 transition-all shadow-lg shadow-accent/20 inline-flex items-center gap-3"
+              className="gradient-button text-white font-body font-semibold text-sm px-10 py-5 rounded tracking-[0.15em] uppercase hover:brightness-110 hover:scale-105 transition-all shadow-lg shadow-coral/20 inline-flex items-center gap-3"
             >
-              Quero Minha Consultoria Gratuita
+              Quero Minha Sessão Gratuita
               <Check size={18} />
             </button>
             <p className="font-body text-xs text-muted-foreground mt-4">
               → Vagas limitadas: 5 por semana
+            </p>
+            <p className="font-body text-xs text-green/80 mt-2">
+              → 100% confidencial · Sem julgamento
             </p>
           </div>
         </ScrollReveal>

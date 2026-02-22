@@ -4,7 +4,7 @@ import ScrollReveal from "./ScrollReveal";
 
 const faqs = [
   {
-    question: "A consulta é realmente gratuita?",
+    question: "A sessão é realmente gratuita?",
     answer: `Sim, 100% gratuita.
 
 Não peço cartão de crédito.
@@ -13,69 +13,71 @@ Não há "pegadinhas".
 
 É gratuita porque:
 1. Acredito que você deve conhecer meu trabalho antes de pagar
-2. Algumas empresas decidem me contratar depois (naturalmente)
+2. Algumas mulheres decidem me contratar depois (naturalmente)
 3. Outras não precisam (e eu digo isso na cara)
 
-Se procura honestidade, está no lugar certo.`,
+Se procura acolhimento sem julgamento, está no lugar certo.`,
   },
   {
-    question: "O que preciso preparar para a consulta?",
+    question: "O que preciso preparar para a sessão?",
     answer: `Apenas:
 
 • 30 minutos do seu tempo
-• Últimas 3 declarações de IRPJ/CSLL (se tiver)
-• Uma descrição dos seus principais desafios fiscais
+• Lista das suas dívidas atuais (valores e credores)
+• Uma descrição dos seus principais desafios
 
 Não precisa de:
-• Preparar apresentações
-• Reunir a equipe toda
+• Preparar documentos complexos
 • Ter orçamento aprovado
+• Esconder nada por vergonha
 
-Vem como está. A conversa adapta-se à sua situação.`,
+Vem como está. Sem julgamentos.`,
   },
   {
-    question: "E se eu já tiver contador?",
-    answer: `Perfeito. Não quero "roubar" seu contador.
+    question: "Quanto tempo demora para sair das dívidas?",
+    answer: `Depende da sua situação, mas:
 
-O que ofereço é:
-• Segunda opinião especializada
-• Identificação de oportunidades que ele pode ter perdido
-• Colaboração (se ele estiver aberto)
+• Dívidas até R$ 50.000: 6-12 meses
+• Dívidas até R$ 150.000: 12-18 meses
+• Dívidas até R$ 300.000: 18-24 meses
+• Dívidas acima de R$ 300.000: 24-36 meses
 
-Muitos clientes mantêm o contador atual e me contratam apenas para consultoria especializada.
+Estes são os tempos MÉDIOS das minhas clientes.
 
-O importante é seu dinheiro não ficar na mesa.`,
+Alguns conseguem mais rápido. Outros demoram mais.
+O importante é: você SEMPRE consegue.`,
   },
   {
-    question: "Trabalha com que tipo de empresas de saúde?",
-    answer: `Especializo-me em:
+    question: "Quanto custa seu programa?",
+    answer: `Se após a sessão fizer sentido trabalhar juntas, tenho 3 opções:
 
-✓ Clínicas Odontológicas
-✓ Clínicas de Fisioterapia
-✓ Centros Médicos
-✓ Farmácias
-✓ Laboratórios de Análises
-✓ Hospitais e Casas de Saúde
+1. Programa Online (R$ 497/mês)
+   → Acesso ao método + comunidade
 
-Se seu negócio está no setor da saúde, posso ajudar.`,
-  },
-  {
-    question: "Quais são seus honorários?",
-    answer: `Se após a consulta fizer sentido trabalhar juntos, tenho 3 opções:
+2. Acompanhamento Pessoal (R$ 1.200/mês)
+   → Sessões mensais 1:1 + plano personalizado
 
-1. Consultoria Pontual (R$ 2.000)
-   → Análise fiscal + plano de otimização
-
-2. Recuperação de Impostos (15% do recuperado)
-   → Só paga se recuperar dinheiro
-
-3. Contabilidade Mensal (a partir de R$ 1.500/mês)
-   → Gestão completa da sua contabilidade
+3. Programa Premium (R$ 2.500/mês)
+   → Acompanhamento total + negociação com bancos
 
 Mas repito:
-Só falarei disso NA CONSULTA, se fizer sentido para você.
+Só falarei disso NA SESSÃO, se fizer sentido para você.
 
 Não estou aqui para vender. Estou aqui para ajudar.`,
+  },
+  {
+    question: "O método funciona para qualquer tipo de dívida?",
+    answer: `Sim. Já trabalhei com:
+
+✓ Cartões de crédito
+✓ Empréstimo pessoal
+✓ Financiamento de veículo
+✓ Financiamento imobiliário
+✓ Empréstimos bancários
+✓ Dívidas com familiares
+✓ Dívidas fiscais
+
+Se é uma dívida, consigo ajudar.`,
   },
   {
     question: "Como funciona o agendamento?",

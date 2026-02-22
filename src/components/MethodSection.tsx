@@ -1,71 +1,84 @@
-import { FileText, TrendingUp, Settings, BarChart3 } from "lucide-react";
+import { FileText, TrendingUp, Shield, Star, Heart } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const phases = [
   {
     icon: FileText,
-    title: "FASE 1 — Diagnóstico Fiscal Completo (Semana 1)",
-    description: "Auditoria de 360° na sua situação",
+    title: "FASE 1 — Diagnóstico Total (Semana 1)",
+    description: "Mapeamento completo (sem julgamento)",
     details: [
-      "Analiso os últimos 3 anos de declarações (SPED, ECD, ECF)",
-      "Identifico erros, omissões e oportunidades perdidas",
-      "Mapeio TODAS as deduções aplicáveis ao seu setor",
-      "Calculo exatamente quanto você está pagando a mais",
+      "Listo TODAS as suas dívidas (bancos, cartões, outros)",
+      "Calculo juros reais (CET - Custo Efetivo Total)",
+      "Analiso seu orçamento atual",
+      "Identifico 'vazamentos' de dinheiro",
+      "Entendo sua relação emocional com dinheiro",
     ],
-    result: "Resultado: Eu sei exatamente quanto posso recuperar para você.",
+    result: "Resultado: Você sabe exatamente onde está. Sem surpresas. Sem vergonha.",
   },
   {
     icon: TrendingUp,
-    title: "FASE 2 — Planejamento Tributário Estratégico (Semana 2)",
-    description: "Plano escrito de ação",
+    title: "FASE 2 — Estratégia Personalizada (Semana 2)",
+    description: "Plano feito sob medida para VOCÊ",
     details: [
-      "Estratégias para reduzir IRPJ, CSLL, PIS/COFINS",
-      "Análise do melhor regime (Simples vs Lucro Presumido vs Real)",
-      "Cronograma de implementação",
-      "Projeção de economia anual",
-      "Riscos e como mitigar",
+      "Escolho o melhor método (bola de neve ou avalanche)",
+      "Negocio prazos e taxas com credores",
+      "Crio um orçamento que você CONSEGUE cumprir",
+      "Defino metas mensais realistas",
+      "Ensino técnicas de negociação com bancos",
     ],
-    result: "Resultado: Você sabe o que vou fazer e quanto vai economizar.",
+    result: "Resultado: Você tem um caminho claro, mês a mês.",
   },
   {
-    icon: Settings,
-    title: "FASE 3 — Implementação (Semanas 3-4)",
-    description: "Mão na massa",
+    icon: Shield,
+    title: "FASE 3 — Ataque às Dívidas (Meses 1-12)",
+    description: "Implementação do plano",
     details: [
-      "Entrego declarações retificadoras",
-      "Implemento novas estruturas tributárias",
-      "Negocio com a Receita Federal",
-      "Protocolo PER/DCOMP para recuperação",
+      "Você começa a pagar dívidas pela ordem CERTA",
+      "Aplica técnicas de negociação que ensino",
+      "Ajusta orçamento conforme necessário",
+      "Comemora cada vitória (por pequena que seja)",
+      "Tem meu suporte em cada passo",
     ],
-    result: "Resultado: A economia começa a acontecer.",
+    result: "Resultado: Você VÊ o saldo total diminuir mês a mês.",
   },
   {
-    icon: BarChart3,
-    title: "FASE 4 — Monitoramento Contínuo (Mensal)",
-    description: "Acompanhamento mensal",
+    icon: Star,
+    title: "FASE 4 — Liberdade Total (Meses 12-18)",
+    description: "A última dívida é paga",
     details: [
-      "Revisão das suas obrigações fiscais",
-      "Ajustes estratégicos",
-      "Relatórios claros de economia",
-      "Disponibilidade total para dúvidas",
+      "Celebramos sua liberdade",
+      "Criamos fundo de emergência (3-6 meses)",
+      "Você começa a investir para o futuro",
+      "Torna-se exemplo para outras mulheres",
     ],
-    result: "Resultado: Você dorme tranquilo. Eu cuido de tudo.",
+    result: "Resultado: Você acorda sem stress financeiro. Pela primeira vez em anos.",
+  },
+  {
+    icon: Heart,
+    title: "FASE 5 — Legado (Opcional)",
+    description: "Você ajuda outras mulheres",
+    details: [
+      "Compartilha sua história",
+      "Mentora outras mulheres",
+      "Torna-se embaixadora do método",
+    ],
+    result: "Resultado: Seu sofrimento transforma-se em esperança para outras mulheres.",
   },
 ];
 
 const MethodSection = () => {
   return (
-    <section id="servicos" className="bg-background py-20 px-4">
+    <section className="bg-background py-20 px-4">
       <div className="container mx-auto max-w-5xl">
         <ScrollReveal>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
-            Como Funciona o Método F. Ortega de Blindagem Tributária
+            Como Funciona o Método Liberdade Financeira
           </h2>
           <div className="gold-line w-16 mx-auto mb-4" />
           <p className="font-body text-foreground/70 text-center max-w-2xl mx-auto mb-12">
-            Eu não faço mágica. Eu faço engenharia tributária.
+            Não é teoria de livro de finanças. Não é "pense positivo". Não é "corte o cafezinho".
             <br />
-            Sigo um processo de 4 fases que já recuperou mais de R$ 2 milhões para empresas de saúde.
+            É um método prático de 5 fases que já libertou +500 mulheres.
           </p>
         </ScrollReveal>
 
@@ -92,7 +105,7 @@ const MethodSection = () => {
                         </li>
                       ))}
                     </ul>
-                    <p className="font-body text-sm font-semibold text-gold italic">
+                    <p className="font-body text-sm font-semibold text-green italic">
                       {phase.result}
                     </p>
                   </div>

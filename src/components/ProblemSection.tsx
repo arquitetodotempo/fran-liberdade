@@ -2,21 +2,23 @@ import { X } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
 const problems = [
-  "Você recebe guias de DARF de R$ 30.000, R$ 50.000 ou mais e sente um aperto no peito, sem saber como reduzir.",
-  "Seu contador 'generalista' não entende as particularidades do setor de saúde e trata sua clínica como um comércio qualquer.",
-  "Você sabe que existem benefícios fiscais específicos (Simples Nacional, Lucro Presumido), mas ninguém os aplica.",
-  "Já ouviu falar em 'deduções para clínicas' mas seu contador diz que 'não se aplica ao seu caso'.",
-  "Você teme estar pagando impostos a mais enquanto seus concorrentes descobrem brechas legais e crescem mais rápido.",
-  "Já trocou de contador 2-3 vezes e continua na mesma: paying too much, growing too little.",
+  "Você acorda de madrugada com o coração acelerado, pensando nas dívidas que não param de crescer.",
+  "Seu salário cai na conta e você já sabe: não vai dar para tudo de novo.",
+  "Você usa o cartão de crédito para tapar buracos, mas a bola de neve só aumenta.",
+  "Já tentou fazer orçamentos, planilhas, apps... mas nada funciona por muito tempo.",
+  "Você sente vergonha de falar sobre dinheiro com seu marido, família ou amigos.",
+  "Os juros do banco te assustam (300%, 400% ao ano!) e você não vê saída.",
+  "Parece que você trabalha apenas para pagar boletos e credores.",
+  "Você se sente culpada por cada compra, mesmo as necessárias.",
 ];
 
 const ProblemSection = () => {
   return (
-    <section id="servicos" className="bg-card py-20 px-4">
+    <section className="bg-card py-20 px-4">
       <div className="container mx-auto max-w-4xl">
         <ScrollReveal>
           <h2 className="font-heading text-3xl md:text-4xl font-bold text-foreground text-center mb-4">
-            Você Se Identifica Com Isso?
+            Isso Soa Familiar Para Você?
           </h2>
           <div className="gold-line w-16 mx-auto mb-12" />
         </ScrollReveal>
@@ -33,19 +35,21 @@ const ProblemSection = () => {
         </div>
 
         <ScrollReveal direction="up">
-          <div className="bg-gradient-to-r from-gold/10 via-gold/20 to-gold/10 p-6 rounded-lg border border-gold/30">
+          <div className="bg-gradient-to-r from-green/10 via-green/20 to-green/10 p-6 rounded-lg border border-green/30">
             <p className="font-body text-foreground mb-3 leading-relaxed">
-              Se você se identificou com pelo menos 2 pontos acima, tenho uma boa notícia:
+              Se você se identificou com pelo menos 2 pontos acima, eu quero que você saiba de uma coisa:
             </p>
             <p className="font-body text-foreground font-semibold mb-3">
-              O problema NÃO é sua clínica.
+              Você NÃO é fraca.
               <br />
-              O problema NÃO é você.
+              Você NÃO é irresponsável.
               <br />
-              O problema é ter o contador ERRADO.
+              Você NÃO é a única.
             </p>
-            <p className="font-body text-foreground italic">
-              Existe um caminho diferente. E eu vou te mostrar agora.
+            <p className="font-body text-foreground italic leading-relaxed">
+              Milhares de mulheres trabalhadoras, honestas e responsáveis estão na mesma situação que você.
+              O problema não é você. É o método que te venderam até agora.
+              E existe uma forma diferente de sair das dívidas. Uma forma mais leve. Mais humana. Mais feminina.
             </p>
           </div>
         </ScrollReveal>

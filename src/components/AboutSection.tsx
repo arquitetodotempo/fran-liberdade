@@ -1,19 +1,12 @@
-import { Check, Building2 } from "lucide-react";
+import { Check, Heart } from "lucide-react";
 import ScrollReveal from "./ScrollReveal";
 
-const specialties = [
-  "Clínicas Odontológicas",
-  "Clínicas de Fisioterapia",
-  "Centros Médicos",
-  "Farmácias",
-  "Laboratórios",
-];
-
 const differentials = [
-  "Especialização exclusiva (não aceito outros setores)",
-  "Conhecimento profundo da legislação de saúde",
-  "Relacionamentos com a Receita Federal",
-  "Histórico comprovado de recuperações",
+  "Baseado em princípios reais de finanças",
+  "Testado em 500+ mulheres",
+  "Adaptado à realidade brasileira",
+  "Sem promessas vazias",
+  "Com acolhimento e empatia",
 ];
 
 const AboutSection = () => {
@@ -32,7 +25,15 @@ const AboutSection = () => {
             <div className="flex justify-center">
               <div className="relative">
                 <div className="absolute -inset-4 rounded-xl border-2 border-gold/30 shadow-2xl" />
-                <img src="/Gemini_Generated_Image_3vwjq83vwjq83vwj.png" alt="F. Ortega" className="relative w-full max-w-lg rounded-xl shadow-2xl" />
+                <div className="bg-gradient-to-br from-green/20 to-gold/20 rounded-xl p-8 text-center">
+                  <Heart size={64} className="text-gold mx-auto mb-4" />
+                  <p className="font-heading text-lg font-bold text-foreground mb-2">
+                    Fran Ortega
+                  </p>
+                  <p className="font-body text-sm text-muted-foreground">
+                    Mulher, Mãe, Contadora
+                  </p>
+                </div>
               </div>
             </div>
           </ScrollReveal>
@@ -46,37 +47,60 @@ const AboutSection = () => {
                 E vou ser brutalmente honesta com você:
               </p>
               <p className="font-body text-foreground mb-6 leading-relaxed">
-                NÃO sou uma contadora "generalista" que atende todos os setores.
+                Eu NÃO sou uma "guru" de finanças.
                 <br />
-                Sou especialista em empresas de saúde. <strong>PONTO.</strong>
+                Eu NÃO tenho um curso de R$ 5.000 para te vender.
+                <br />
+                Eu NÃO prometo que você vai ficar rica em 30 dias.
+              </p>
+              <p className="font-body text-foreground mb-6 leading-relaxed">
+                Eu sou uma mulher, mãe, contadora com 36 anos.
               </p>
 
+              <p className="font-body text-foreground/80 mb-6 leading-relaxed">
+                Especializei-me em ajudar mulheres como você:
+              </p>
+
+              <ul className="space-y-2 mb-6">
+                {[
+                  "Profissionais trabalhadoras",
+                  "Famílias endividadas",
+                  "Jovens que se perderam no crédito",
+                  "Empreendedoras com dificuldades financeiras",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <Check size={16} className="text-green shrink-0 mt-0.5" />
+                    <span className="font-body text-sm text-foreground">{item}</span>
+                  </li>
+                ))}
+              </ul>
+
               <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
-                Por quê?
+                Por Que Este Trabalho?
               </h3>
               <p className="font-body text-foreground/80 mb-6 leading-relaxed">
-                Porque durante anos vi clínicas serem prejudicadas por contadores que 
-                NÃO entendem o setor. Vi clínicas fecharem porque pagaram impostos a mais. 
-                Vi diretores clínicos frustrados com contadores incompetentes.
+                Porque já vi demais mulheres:
               </p>
-              <p className="font-body text-foreground font-semibold mb-6">
-                E decidi que isso tinha de mudar.
-              </p>
-
-              <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
-                Minha Especialização:
-              </h3>
-              <div className="grid grid-cols-2 gap-2 mb-6">
-                {specialties.map((s, i) => (
-                  <div key={i} className="flex items-center gap-2">
-                    <Building2 size={14} className="text-sage shrink-0" />
-                    <span className="font-body text-sm text-foreground">{s}</span>
-                  </div>
+              <ul className="space-y-2 mb-6">
+                {[
+                  "Perder a casa por dívidas",
+                  "Destruir casamentos por dinheiro",
+                  "Viver em stress constante",
+                  "Perder a esperança",
+                ].map((item, i) => (
+                  <li key={i} className="flex items-start gap-2">
+                    <span className="w-1.5 h-1.5 bg-gold rounded-full shrink-0 mt-2" />
+                    <span className="font-body text-sm text-foreground/80">{item}</span>
+                  </li>
                 ))}
-              </div>
+              </ul>
+
+              <p className="font-body text-foreground font-semibold mb-6">
+                E sei que há uma saída.
+              </p>
 
               <h3 className="font-heading text-lg font-semibold text-foreground mb-3">
-                O Que Me Torna Diferente:
+                Meu Método:
               </h3>
               <div className="space-y-2 mb-6">
                 {differentials.map((d, i) => (
@@ -88,9 +112,9 @@ const AboutSection = () => {
               </div>
 
               <p className="font-heading text-base font-bold text-foreground">
-                NÃO prometo mágica.
+                Não estou aqui para te vender sonhos.
                 <br />
-                Prometo competência técnica e resultados reais.
+                Estou aqui para te dar liberdade.
               </p>
             </div>
           </ScrollReveal>
