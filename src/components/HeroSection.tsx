@@ -27,7 +27,7 @@ const HeroSection = () => {
           </div>
 
           <h1 className="font-heading text-4xl md:text-5xl lg:text-6xl font-bold text-white leading-tight mb-6">
-            De Volta ao Controle: Como Mulheres Como Você 
+            De Volta ao Controle: Como Mulheres Como Você
             <span className="block text-gold mt-3">Estão Saindo Das Dívidas em 12 Meses</span>
           </h1>
 
@@ -80,14 +80,27 @@ const HeroSection = () => {
           transition={{ duration: 0.8, delay: 0.3, ease: [0.25, 0.1, 0.25, 1] }}
         >
           <div className="relative">
-            <div className="absolute -inset-4 bg-gold/20 rounded-2xl blur-3xl" />
-            <div className="absolute -inset-px rounded-2xl border border-white/20" />
-            <div className="bg-white/10 backdrop-blur-sm rounded-2xl p-8 text-center">
-              <p className="font-heading text-5xl font-bold text-gold mb-2">500+</p>
-              <p className="font-body text-white text-lg">Mulheres Libertas</p>
-              <div className="gold-line w-16 mx-auto my-4" />
-              <p className="font-heading text-4xl font-bold text-gold mb-2">18</p>
-              <p className="font-body text-white text-sm">Meses Médios para Liberdade</p>
+            {/* Glow effect behind image */}
+            <div className="absolute -inset-4 bg-gradient-to-br from-gold/30 to-green/30 rounded-2xl blur-3xl" />
+            
+            {/* Image container with border */}
+            <div className="relative bg-white/10 backdrop-blur-sm rounded-2xl p-4 border border-white/20 shadow-2xl">
+              <img
+                src="/hero-woman.png"
+                alt="Mulher conquistando liberdade financeira"
+                className="w-full max-w-md h-auto rounded-xl"
+              />
+              
+              {/* Stats overlay */}
+              <div className="absolute -bottom-4 -left-4 bg-gold/90 backdrop-blur-sm rounded-lg px-6 py-4 shadow-lg">
+                <p className="font-heading text-3xl font-bold text-white mb-1">500+</p>
+                <p className="font-body text-white text-sm">Mulheres Libertas</p>
+              </div>
+              
+              <div className="absolute -top-4 -right-4 bg-green/90 backdrop-blur-sm rounded-lg px-6 py-4 shadow-lg">
+                <p className="font-heading text-3xl font-bold text-white mb-1">18</p>
+                <p className="font-body text-white text-sm">Meses para Liberdade</p>
+              </div>
             </div>
           </div>
         </motion.div>
